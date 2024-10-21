@@ -395,6 +395,9 @@ nav{
         font-size: 20px;
     }
 
+.footer>p{
+    font-size: 13px;
+}
 
     li {
         width:120px;
@@ -418,6 +421,7 @@ nav{
         flex-direction: column;
         font-weight: 500;
         align-items: flex-start;
+        gap: 15px;
     }
     .footer{
         padding: 20px;
