@@ -1,0 +1,403 @@
+@font-face {
+    font-family: logo-font;
+    src: url(fonts/QwitcherGrypen-Bold.woff);
+}
+
+@font-face {
+    font-family: content-font;
+    src: url(fonts/Montserrat-VariableFont_wght.woff2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: content-font;
+    overflow: visible;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.logo{
+    font-family: logo-font;
+    font-size: 40px;
+    color: black;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0%;
+    flex-grow: 1;
+    max-width: 100%;
+
+}
+header {
+    position: sticky;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    min-height: 15vh;
+    max-height: 50vh;
+    align-items: center;
+    background:  rgb(255, 115, 0);
+    font-size: 20px;
+    color: white;
+    padding-left:40px;
+    padding-right: 40px;
+    font-weight: 700;
+    z-index: 1000;
+    top: 0;
+    overflow: visible;
+    flex-wrap: wrap;
+    
+}
+
+.header-hero {
+    height: 100vh;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+#slide1 {
+    text-align: center;
+}
+#hero {
+    position: relative;
+    height: 85vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.hero-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    
+    color: black;
+    border-radius: 10px;
+
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/jollof.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; 
+    z-index: -1; 
+}
+
+.hero-content > a{
+    background: rgb(255, 115, 0);
+   max-width: 150px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.hero-content > h2 {
+    font-size: 75px;
+}
+
+
+
+#location {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: gainsboro;
+    flex-direction: column;
+}
+
+.hours, .mainlocation, #contact {
+    text-align: center;
+}
+
+.hours > p, .mainlocation >p, #contact  {
+    font-size: 25px;
+}
+
+.hours > h1, .mainlocation >h1{
+    color: rgba(255, 123, 0, 0.788);
+    font-size: 30px;
+}
+.cell {
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact > span{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+.contact{
+    padding-bottom: 15px;
+}
+
+section > h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px;
+    padding-top: 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 3px 2px 2px 3px rgb(206, 180, 138);
+    box-sizing: border-box;
+    background: rgb(3, 3, 3);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
+
+}
+
+.box > h3 {
+    font-size: 22px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0%;
+
+}
+
+li {
+    list-style: none;
+    background: white ;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(194, 150, 106);
+    width: 150px;
+    font-size: 18px;
+    display: grid;
+    color: black;
+    font-weight: 700;
+}
+
+.sands, .sides {
+    background-color: gainsboro;
+}
+
+#swallows {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    text-align: center;
+    padding: 120px;
+    padding-bottom: 10px;
+    display: grid;
+    row-gap: 70px;
+    background: rgb(255, 115, 0);
+}
+
+.footer-nav {
+    display: flex;
+   justify-content: center;
+   gap: 40px;
+   font-size: 20px;
+   flex-wrap: wrap;
+   font-weight: 700;
+
+}
+
+.footer-services{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer-services > a{
+    background: white;
+    
+}
+
+nav{
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropdown {
+    display: inline-flex;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(87, 85, 84);
+    margin-top: 20px;
+  }
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+    background-color: black;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bottom-footer-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 15px;
+
+}
+
+#price-list{
+    text-align: center;
+}
+
+#about-us{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 0px;
+    gap: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.slides {
+    max-width: 500px;  
+    height: 500px;
+    display: block;
+    border-radius: 15px;
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    box-shadow: 10px 10px 10px 13px rgb(15, 15, 15);
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 25px;
+    max-width: 600px;
+    font-family: section-one-font;
+    padding: 30px;
+}
+
+.divider {
+    height: 1px; /* Thickness of the line */
+    background-color: black; /* Color of the line */
+}
+
+@media (max-width: 440px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.header-nav{
+    font-size: 13px;
+    gap: 8px;
+}
+
+    #slide1 {
+        font-size: 35px;
+    }
+    #location {
+        font-size: 5px;
+        padding: 25px;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+    .dropdown-button{
+        height: 14px;
+        width: 14px;
+    }
+
+    .about {
+        font-size: 23px;
+        line-height: 1.2;
+        white-space: normal;
+
+    }
+
+}
