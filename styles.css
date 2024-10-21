@@ -414,6 +414,7 @@ nav{
         font-size: 20px;
         line-height: 1.2;
         white-space: normal;
+        font-family: content-font;
     }
 
     .footer-nav{
